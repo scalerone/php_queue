@@ -1,0 +1,6 @@
+crontab -e 定时任务
+>> 重定向
+2>&1 标准输出
+
+touch 新建文件
+tail -f log.log 监控文件
