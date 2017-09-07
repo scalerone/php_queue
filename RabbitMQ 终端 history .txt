@@ -23,6 +23,6 @@ composer update
 
 
 -- 生产者发送消息 
-php ~/sites/php-amqplib/demo/amqp_publisher.php message1
+php ~/sites/php-amqplib/demo/amqp_publisher.php message123
 -- 消费者接收消息 
 php ~/sites/php-amqplib/demo/amqp_consumer.php 

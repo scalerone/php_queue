@@ -12,7 +12,7 @@ while(1){
     //从队列最左侧取出一个值来，
     $user = $redis->lPop($redis_name);
     //然后判断这个值是否存在
-    if(!$user||$user=='nil'){
+    if(!$user||$user=='null'){
         sleep(2);
         continue;
     }
