@@ -14,7 +14,7 @@ use PhpAmqpLib\Message\AMQPMessage;
 //建立一个连接信道，声明一个可以发送消息的队列task_queue
 $connection = new AMQPStreamConnection('localhost', 5672, 'guest', 'guest');
 $channel = $connection->channel();
-//为了不让队列消失，需要把队列声明为持久化（durable=true）
+//声明队列时为了不让队列消失，需要把队列声明为持久化（durable=true）
 $channel->queue_declare('task_queue', false, true, false, false);
 //cmd运行：php new_task.php "A very hard task which takes two seconds.."
 //接收传来的数据："A very hard task which takes two seconds.."
