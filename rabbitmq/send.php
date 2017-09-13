@@ -5,6 +5,7 @@
  * Date: 2017/9/11
  * Time: 14:08
  */
+//////////reveive.php接收//////////
 //引用所需文件
 require_once __DIR__ . '/vendor/autoload.php';
 use PhpAmqpLib\Connection\AMQPStreamConnection;
